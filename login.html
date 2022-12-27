@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <title>Tindog</title>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <link type="image/icon" rel="icon" href="resources/logoSVG.svg" />
+   <link type="text/css" rel="stylesheet" href="css/login.css" />
+   <link type="text/css" rel="stylesheet" href="css/fonts.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <div class="main_container_SI">
+
+      <!------------------left container-------------------->
+      <div class="left_container_SI">
+         <div class="logo_container_SI">
+            <img src="resources/logo_whiteSVG.svg" class="logo_image_SI">
+            <p class="project_title_SI">Tindog</p>
+         </div>
+      </div>
+
+      <!-----------------right container-------------------->
+      <div class="right_container_SI">
+
+         <div class="form_box_SI">
+            <div class="logo_container_form_SI">
+               <img src="resources/logo_whiteSVG.svg" class="logo_image_form_SI">
+               <p class="project_title_form_SI">Tindog</p>
+            </div>
+
+            <!-----------------signin container-------------------->
+            <div id="signin_box_SI">
+               <h2 class="signin_title_SI">Sign In</h2>
+               <fieldset>
+                  <legend>Email id<span style="color: red;">*</span></legend>
+                  <input type="text" id="email_SI">
+               </fieldset>
+               <fieldset>
+                  <legend>Password<span style="color: red;">*</span></legend>
+                  <input type="password" id="password_SI">
+               </fieldset>
+               <input type="submit" value="Sign in" id="signin_btn_SI" onclick="signin_btn_click()">
+               <p class="redirection_SI redirection_SU">Do not have account? <a id="redirect_to_signup">Create account</a></p>
+            </div>
+
+            <!-----------------signup container-------------------->
+            <div id="signup_box_SI" class="hidden">
+               <h2 class="signin_title_SI">Sign Up</h2>
+               <div class="inline_text_block">
+                  <fieldset class="inline_SU">
+                     <legend>First Name<span style="color: red;">*</span></legend>
+                     <input type="text" id="firstname_SU">
+                  </fieldset>
+                  <fieldset class="inline_SU">
+                     <legend>Last Name<span style="color: red;">*</span></legend>
+                     <input type="text" id="lastname_SU">
+                  </fieldset>
+               </div>
+               <fieldset>
+                  <legend>Email id<span style="color: red;">*</span></legend>
+                  <input type="text" id="email_SU">
+               </fieldset>
+               <fieldset>
+                  <legend>Phone no<span style="color: red;">*</span></legend>
+                  <input type="number" id="phone_SU">
+               </fieldset>
+               <fieldset>
+                  <legend>Password<span style="color: red;">*</span></legend>
+                  <input type="password" id="password_SU">
+               </fieldset>
+               <fieldset>
+                  <legend>Confirm Password<span style="color: red;">*</span></legend>
+                  <input type="password" id="confpassword_SU">
+               </fieldset>
+               <input type="submit" value="Sign up" id="signup_btn_SU" onclick="signup_btn_click()">
+               <p class="redirection_SI redirection_SU">Already have an account? <a id="redirect_to_signin">Sign in</a></p>
+            </div>
+         </div>
+      </div>
+
+      <!------------------video container------------------->
+      <div class="randImage_container_SI">
+         <img src="nn" id="imageRandom">
+      </div>
+   </div>
+
+   <!------------------java script------------------->
+   <script type="text/javascript" src="js/login.js"></script>
+</body></html>

@@ -1,0 +1,223 @@
+body {
+   margin: 0 !important;
+   padding: 0 !important;
+   font-size: 13px !important;
+   font-family: 'SF Pro Text' !important;
+}
+
+.main_container_UA {
+   height: 100%;
+   width: 100%;
+   margin: auto;
+}
+
+.left_container_UA {
+   height: 80%;
+   width: 40%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: relative;
+   padding: 0rem 1rem;
+}
+
+.right_container_UA {
+   display: none;
+   height: 80%;
+   width: 40%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: relative;
+   padding: 0rem 1rem;
+   overflow: hidden;
+}
+
+#phone_UA,
+#email_UA,
+#password_UA,
+#del_acc_pass_UA,
+#firstname_UA,
+#lastname_UA,
+#confpassword_UA {
+   font-family: 'SF Pro Text Bold';
+   font-size: 1.2em;
+   position: relative;
+   width: 100%;
+   border: none;
+   height: 40px;
+   background-color: #fff;
+   padding: 10px 20px;
+   box-sizing: border-box;
+   margin: auto auto 5px auto;
+}
+
+#email_UA:focus,
+#phone_UA:focus,
+#del_acc_pass_UA:focus,
+#password_UA:focus,
+#firstname_UA:focus,
+#lastname_UA:focus,
+#confpassword_UA:focus {
+   outline: none;
+   background-color: #ff466820;
+}
+
+#update_account_UA,
+#delete_account_UA {
+   position: relative;
+   float: right;
+   margin-top: 2%;
+   border: none;
+   background-color: #ff4668;
+   color: white;
+   font-family: 'SF Pro Text Medium';
+   font-size: 1.2em;
+   padding: 5px 20px;
+   border-radius: 50px;
+}
+
+#update_account_UA:focus,
+#delete_account_UA:focus {
+   outline: none;
+}
+
+fieldset {
+   border: 1px solid black !important;
+   border-radius: 5px;
+   width: 100%;
+   overflow: hidden;
+   padding: 0;
+   margin: auto auto 10px auto !important;
+}
+
+legend {
+   font-size: 1em !important;
+   margin: 0 0 0 15px !important;
+   width: auto !important;
+}
+
+.redirection_UA {
+   position: absolute;
+   margin-top: 2.7%;
+   font-size: 1.1em;
+   text-align: left;
+}
+
+.redirection_UA button {
+   color: #3636ff !important;
+   font-size: 1.2em !important;
+   padding: 0 !important;
+   border: none;
+   background-color: transparent;
+   font-family: 'SF Pro Text Medium' !important;
+}
+
+.redirection_UA button:focus,
+.redirection_UA button:hover {
+   outline: none;
+   color: #000 !important;
+   background-color: #ff466820;
+}
+
+/*------------form controls Signiup--------------*/
+
+.inline_text_block {
+   border-radius: 5px;
+   width: calc(100% + 2px);
+   overflow: hidden;
+   padding: 0;
+   margin: auto;
+}
+
+.inline_text_block fieldset {
+   margin-bottom: 5px !important;
+}
+
+.inline_UA {
+   border: 1px solid black;
+   border-radius: 5px;
+   width: calc(50% - 3px);
+   overflow: hidden;
+   padding: 0;
+   display: inline-block;
+   margin: auto auto 10px auto;
+}
+
+
+/*------------media query 1--------------*/
+
+@media only screen and (max-width: 1280px) and (min-width: 831px) {
+   .left_container_UA {
+      width: 60%;
+   }
+
+   .right_container_UA {
+      width: 60%;
+   }
+}
+
+/*------------media query 2--------------*/
+
+@media only screen and (max-width: 830px) and (min-width: 481px) {
+
+   .left_container_UA {
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      transform: translate(-50%, -50%);
+   }
+
+   .inline_UA {
+      width: 100%;
+   }
+
+   .right_container_UA {
+      display: none;
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      transform: translate(-50%, -50%);
+   }
+
+}
+
+/*------------media query 3 (for mobile)--------------*/
+
+@media only screen and (max-device-width: 480px) {
+
+   .left_container_UA {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      padding: 1.5rem;
+      transform: translate(-50%, -50%);
+   }
+
+   .inline_UA {
+      width: 100%;
+   }
+
+   .right_container_UA {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      padding: 1.5rem;
+      transform: translate(-50%, -50%);
+   }
+
+   .inline_text_block fieldset {
+      margin-bottom: 0px !important;
+   }
+
+
+}

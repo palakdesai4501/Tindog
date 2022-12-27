@@ -1,0 +1,51 @@
+/*-----------------font-files-----------------*/
+
+@font-face {
+   font-family: 'SF Pro Text Italic';
+   src: url('../resources/fonts/SF-Pro-Text-Italic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'SF Pro Text Bold';
+   src: url('../resources/fonts/SF-Pro-Text-Bold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'SF Pro Text Black';
+   src: url('../resources/fonts/SF-Pro-Text-Black.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'SF Pro Text Medium';
+   src: url('../resources/fonts/SF-Pro-Text-Medium.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'SF Pro Text Light';
+   src: url('../resources/fonts/SF-Pro-Text-Light.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'SF Pro Text';
+   src: url('../resources/fonts/SF-Pro-Text-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Courier Custom';
+   src: url('../resources/fonts/Courier.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Courier Custom Bold';
+   src: url('../resources/fonts/Courier-Bold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Courier Custom BoldItalic';
+   src: url('../resources/fonts/Courier-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Courier Custom Italic';
+   src: url('../resources/fonts/Courier-Italic.ttf') format('truetype');
+}

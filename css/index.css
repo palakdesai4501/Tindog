@@ -1,0 +1,314 @@
+body {
+   margin: 0 !important;
+   padding: 0 !important;
+   font-size: 13px !important;
+   font-family: 'SF Pro Text' !important;
+}
+
+/*------------major containers--------------*/
+
+.loader_IN {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+}
+
+.loader_IN img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100px;
+}
+
+.main_container_IN {
+   display: none;
+   height: 100vh;
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.content_container_IN {
+   height: calc(100vh - 7%);
+   box-sizing: border-box;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   -webkit-filter: blur();
+   -moz-filter: blur();
+   -o-filter: blur();
+   -ms-filter: blur();
+   filter: blur();
+}
+
+.blank_dogImg_cover {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   overflow: hidden;
+}
+
+.blank_dogImg_cover img {
+   width: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.nav_container_IN {
+   width: 100%;
+   height: 7%;
+   border: none;
+   position: relative;
+   z-index: 1;
+   background-color: #191919;
+}
+
+.logo_container_IN {
+   position: absolute;
+   display: inline-block;
+   width: 30%;
+   z-index: 10;
+}
+
+.menuIcon {
+   position: relative;
+   color: #fff;
+   padding: 13px 20px;
+   font-size: 2em;
+}
+
+.logo_container_IN p {
+   color: #fff;
+   position: relative;
+   margin: 0;
+   font-family: 'SF Pro Text Black';
+   font-size: 2em;
+   padding: 10px 0 10px 30px;
+   display: inline-block;
+}
+
+#backBtn {
+   display: none;
+}
+
+#menuBtn {
+   display: none;
+}
+
+.menuIcon:hover,
+.backIcon:hover {
+   background: linear-gradient(45deg, #Ef8172, #ff4668);
+   color: #fff;
+}
+
+.nav_menu_IN {
+   display: inline-block;
+   position: absolute;
+   float: right;
+   margin-right: 2%;
+   text-align: center;
+   width: 100%;
+   padding: 16px;
+   box-sizing: border-box;
+}
+
+.nav_menu_IN a {
+   position: relative;
+   font-size: 1.2em;
+   color: #fff !important;
+   font-family: 'SF Pro Text' !important;
+   text-decoration: none;
+   padding: 5px 30px 7px 30px;
+   border-radius: 100px;
+}
+
+
+.nav_container_IN button:hover {
+   background: linear-gradient(45deg, #Ef8172, #ff4668);
+   color: #fff;
+   cursor: pointer;
+}
+
+.active {
+   background: linear-gradient(45deg, #Ef8172, #ff4668);
+   color: #fff;
+}
+
+.nav_menu_IN a:hover,
+.active:hover {
+   background: #fff;
+   color: #000 !important;
+   cursor: pointer;
+}
+
+.nav_menu_IN a:focus,
+.nav_container_IN button:focus {
+   outline: none;
+}
+
+.menuBlock {
+   width: 80%;
+   float: left;
+   margin: 52px 0 0 0;
+   position: absolute;
+   padding: 0;
+   display: block;
+   height: 100vh;
+   background-color: #191919;
+   z-index: 100;
+}
+
+.menuBlockLink {
+   width: 100%;
+   text-align: left;
+   border-radius: 0 !important;
+   display: block;
+   box-sizing: border-box;
+   padding: 15px 30px !important;
+}
+
+.afterSignoutBtn {
+   display: block;
+   z-index: 1000;
+}
+
+.nav_menu_IN button {
+   position: absolute;
+   right: 4%;
+   top: 12px;
+   padding: 5px 20px;
+   font-size: 1.2em;
+   font-family: 'SF Pro Text Bold';
+   border: none;
+   background-color: #fff;
+   border-radius: 100px;
+}
+
+/*------------media query 1--------------*/
+
+@media only screen and (max-width: 1220px) and (min-width: 831px) {
+   .nav_menu_IN a {
+      padding: 5px 15px;
+   }
+
+   .menuBlock {
+      display: none;
+   }
+   
+   .blank_dogImg_cover img {
+      width: 60%;
+   }
+
+   #menuBtn,
+   #backBtn {
+      display: none;
+   }
+
+   .nav_menu_IN button {
+      right: 60px;
+      top: 12px;
+   }
+}
+
+/*------------media query 2--------------*/
+
+@media only screen and (max-width: 830px) and (min-width: 481px) {
+
+   .logo_container_IN {
+      width: 100%;
+      box-sizing: border-box;
+   }
+
+   .logo_container_IN p {
+      padding: 10px 0 10px 5px;
+   }
+
+   #menuBtn {
+      display: inline-block;
+   }
+   
+   .blank_dogImg_cover img {
+      width: 85%;
+   }
+
+   .nav_menu_IN {
+      display: none;
+   }
+
+   .btnSignoutBlock {
+      text-align: left;
+      position: absolute;
+      height: auto;
+      width: 100%;
+   }
+
+   .nav_menu_IN button {
+      position: relative;
+      left: 30px;
+   }
+}
+
+/*------------media query 3 (for mobile)--------------*/
+
+@media only screen and (max-device-width: 480px) {
+
+   .main_container_IN {
+      overflow-y: scroll;
+   }
+
+   .nav_container_IN {
+      height: 50px;
+   }
+
+   .logo_container_IN {
+      width: 100%;
+   }
+
+   .menuIcon {
+      padding: 3% 4%;
+   }
+
+   #menuBtn {
+      display: inline-block;
+   }
+   
+   .blank_dogImg_cover img {
+      top: 40%;
+      width: 90%;
+   }
+
+   .logo_container_IN p {
+      margin-left: 1%;
+      display: inline-block;
+      padding: 2% 0%;
+   }
+
+   .nav_menu_IN {
+      display: none;
+   }
+
+   .btnSignoutBlock {
+      text-align: left;
+      position: absolute;
+      height: auto;
+   }
+
+   .nav_menu_IN button {
+      position: relative;
+      left: 15px;
+      padding: 5px 20px;
+   }
+
+   .menuBlock {
+      margin: 50px 0 0 0;
+   }
+
+   .menuBlockLink {
+      padding: 4% 5% !important;
+   }
+}
+
+
